@@ -2,7 +2,8 @@
 //2-instalar-->npm i typescrypt ts-node-dev -D
 //3- crear /src/app.js
 //4-npx tsc --init ---> inicia el archivo tsconfig.json
-//5-configuro el archivo tsconfig.json---->descomento "outDir": "./dist" || "rootDir": "./src" || "strictPropertyInitialization":false || "experimentalDecorators": true
+//5-configuro el archivo tsconfig.json---->descomento "outDir": "./dist" || "rootDir": "./src" || "strictPropertyInitialization":false || "experimentalDecorators": true || "sourceMap": true
+// ultimamente agrego al objeto tsconfig.ts  "include": ["src"], "exclude": ["node_modules"]
 //6-npx tsc ---->build la aplicación
 //agrego lo siguiente al package.json en scripts----->  "build": "tsc", "dev": "ts-node-dev --respawn src/app.ts"
 import mongoose from "mongoose";
